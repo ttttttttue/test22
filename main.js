@@ -1,14 +1,13 @@
 const applicantForm = document.getElementById('mars-once');
 const buttonReg = document.querySelector('.page__general__block__button');
 const flipping = document.querySelector('.page__general__svg');
-const header__nav = document.querySelectorAll('.header__nav');
+const headerNav = document.querySelectorAll('.header__nav');
 const windowInnerWidth = document.documentElement.clientWidth;
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
-const swiper_button_next = document.querySelector('.swiper-button-next');
-const swiper_button_prev = document.querySelector('.swiper-button-prev');
-const page__general__rightImg = document.querySelector('.page__general__rightImg');
-const sw = document.querySelector('.mySwiper');
+const swiperButtonNext = document.querySelector('.swiper-button-next');
+const swiperButtonPrev = document.querySelector('.swiper-button-prev');
+const pageGeneralRightImg = document.querySelector('.page__general__rightImg');
 
 // use Form
 function serializeForm(formNode) {
@@ -43,11 +42,11 @@ flipping.addEventListener('click', () => {
 //Mobile and Tablet
 
 if (windowInnerWidth <= 768) {
-  for (let i = 0; i < header__nav.length; i++) {
-    header__nav[i].style['display'] = 'none';
+  for (let i = 0; i < headerNav.length; i++) {
+    headerNav[i].style['display'] = 'none';
   }
-  swiper_button_next.style['display'] = 'none';
-  swiper_button_prev.style['display'] = 'none';
+  swiperButtonNext.style['display'] = 'none';
+  swiperButtonPrev.style['display'] = 'none';
 } else {
   menuBtn.style['display'] = 'none';
 }
@@ -109,3 +108,11 @@ var swiper = new Swiper('.mySwiper', {
     },
   },
 });
+
+// window.addEventListener(
+//   'resize',
+//   function (event) {
+//     console.log(event.srcElement.innerWidth);
+//   },
+//   true,
+// );
