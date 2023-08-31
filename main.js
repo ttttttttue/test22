@@ -109,10 +109,4 @@ var swiper = new Swiper('.mySwiper', {
   },
 });
 
-// window.addEventListener(
-//   'resize',
-//   function (event) {
-//     console.log(event.srcElement.innerWidth);
-//   },
-//   true,
-// );
+
